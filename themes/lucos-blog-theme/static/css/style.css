@@ -69,12 +69,12 @@ h3 {
   margin-top: 1.5rem;
 }
 
-a {
+a[href] {
   color: #2a5db0;
   text-decoration: none;
 }
 
-a:hover {
+a[href]:hover {
   text-decoration: underline;
 }
 
@@ -313,6 +313,7 @@ footer {
   margin-top: 2rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
+  list-style: none;
 }
 
 /* Responsive — tablet */
