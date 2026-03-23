@@ -1,5 +1,5 @@
 ---
-title: "Representing Roles."
+title: "Representing Roles"
 date: 2011-06-04
 slug: "representing-roles"
 aliases:

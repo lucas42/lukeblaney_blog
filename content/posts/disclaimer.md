@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Disclaimer"
 date: 2026-03-16
 slug: "i-havent-posted-anything-on-this-blog-for-about-a"
 aliases:
