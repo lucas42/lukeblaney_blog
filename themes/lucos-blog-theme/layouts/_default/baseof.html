@@ -10,11 +10,21 @@
 </head>
 <body>
   <lucos-navbar>{{ .Site.Title }}</lucos-navbar>
+  <nav class="blog-nav" aria-label="Blog navigation">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
   <main class="container">
     {{ block "main" . }}{{ end }}
   </main>
   <footer class="container">
-    <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+    <div class="footer-content">
+      <p>&copy; {{ now.Year }} Luke Blaney</p>
+      <p class="footer-links">
+        <a href="{{ "tags/" | absURL }}">All tags</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>

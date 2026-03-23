@@ -1,6 +1,8 @@
 {{ define "main" }}
-<h1>{{ .Site.Title }}</h1>
-<p class="site-description">{{ .Site.Params.description }}</p>
+<header class="site-header">
+  <h1>{{ .Site.Title }}</h1>
+  <p class="site-description">{{ .Site.Params.description }}</p>
+</header>
 <ul class="post-list">
   {{ range first 10 .Site.RegularPages }}
   <li class="post-item">
@@ -14,4 +16,7 @@
   </li>
   {{ end }}
 </ul>
+{{ if gt (len .Site.RegularPages) 10 }}
+<p class="view-all"><a href="{{ "posts/" | absURL }}">View all posts &rarr;</a></p>
+{{ end }}
 {{ end }}
