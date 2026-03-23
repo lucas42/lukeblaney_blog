@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
-  <script src="{{ "lucos_navbar.js" | absURL }}" type="module"></script>
+  <link rel="stylesheet" href="{{ "/css/style.css" }}">
+  <script src="{{ "/lucos_navbar.js" }}" type="module"></script>
 </head>
 <body>
   <lucos-navbar>{{ .Site.Title }}</lucos-navbar>
@@ -22,7 +22,7 @@
     <div class="footer-content">
       <p>&copy; {{ now.Year }} Luke Blaney</p>
       <p class="footer-links">
-        <a href="{{ "tags/" | absURL }}">All tags</a>
+        <a href="{{ "/tags/" }}">All tags</a>
       </p>
     </div>
   </footer>

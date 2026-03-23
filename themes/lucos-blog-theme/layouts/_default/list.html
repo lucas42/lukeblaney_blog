@@ -8,7 +8,7 @@
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{ with .Params.tags }}
     <span class="tags">
-      {{ range . }}<a href="{{ "tags/" | absURL }}{{ . | urlize }}/" class="tag">{{ . }}</a> {{ end }}
+      {{ range . }}<a href="{{ "/tags/" }}{{ . | urlize }}/" class="tag">{{ . }}</a> {{ end }}
     </span>
     {{ end }}
   </li>

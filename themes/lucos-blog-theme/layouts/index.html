@@ -10,13 +10,13 @@
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{ with .Params.tags }}
     <span class="tags">
-      {{ range . }}<a href="{{ "tags/" | absURL }}{{ . | urlize }}/" class="tag">{{ . }}</a> {{ end }}
+      {{ range . }}<a href="{{ "/tags/" }}{{ . | urlize }}/" class="tag">{{ . }}</a> {{ end }}
     </span>
     {{ end }}
   </li>
   {{ end }}
 </ul>
 {{ if gt (len .Site.RegularPages) 10 }}
-<p class="view-all"><a href="{{ "posts/" | absURL }}">View all posts &rarr;</a></p>
+<p class="view-all"><a href="{{ "/posts/" }}">View all posts &rarr;</a></p>
 {{ end }}
 {{ end }}
