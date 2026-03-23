@@ -1,6 +1,6 @@
 name = "lucos-blog-theme"
 license = "MIT"
-description = "A clean, serif-based blog theme for lucos_blog"
+description = "A clean, serif-based blog theme for lukeblaney_blog"
 
 [author]
   name = "Luke Blaney"

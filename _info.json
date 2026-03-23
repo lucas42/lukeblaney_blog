@@ -1,9 +1,9 @@
 {
-  "system": "lucos_blog",
+  "system": "lukeblaney_blog",
   "checks": {},
   "metrics": {},
   "ci": {
-    "circle": "gh/lucas42/lucos_blog"
+    "circle": "gh/lucas42/lukeblaney_blog"
   },
   "title": "Blog"
 }
