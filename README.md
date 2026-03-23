@@ -1,4 +1,4 @@
-# lucos_blog
+# lukeblaney_blog
 
 A personal blog built with Hugo and served by Nginx, replacing the previous Tumblr-hosted blog at blog.lukeblaney.co.uk.
 

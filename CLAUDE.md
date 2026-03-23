@@ -1,4 +1,4 @@
-# lucos_blog
+# lukeblaney_blog
 
 A Hugo static site blog served by Nginx, deployed on avalon.
 
