@@ -1,10 +1,10 @@
 services:
   blog:
     build: .
-    container_name: lucos_blog
+    container_name: lukeblaney_blog
     ports:
       - $PORT:80
-    image: lucas42/lucos_blog
+    image: lucas42/lukeblaney_blog
     restart: always
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://127.0.0.1:80/_info"]
