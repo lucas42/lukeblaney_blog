@@ -7,7 +7,6 @@ A Hugo static site blog served by Nginx, deployed on avalon.
 - **Hugo** generates static HTML at build time
 - **Nginx** serves the built files
 - Multi-stage Docker build: Hugo build → Nginx serve
-- `lucos_navbar` web component included via Docker multi-stage copy
 
 ## Development
 
