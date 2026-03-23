@@ -1,0 +1,16 @@
+baseURL = "https://blog.lukeblaney.co.uk/"
+languageCode = "en-gb"
+title = "Luke's Blog"
+theme = "lucos-blog-theme"
+paginate = 10
+
+[params]
+  description = "A personal blog by Luke Blaney"
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
