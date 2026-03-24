@@ -261,6 +261,44 @@ a[href]:hover {
   font-style: italic;
 }
 
+.post-content table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: solid thin;
+}
+
+.post-content table td {
+  padding: 2px 7px;
+}
+
+.post-content table td + td, .post-content table th + th {
+  border-left: solid thin;
+}
+
+.post-content table thead {
+  background: #d7c1e4;
+  border-bottom: solid thin;
+}
+.post-content table tbody tr:nth-child(even) {
+  background-color: #f4eef4;
+}
+
+.post-content .warning {
+  background: #ffc690;
+  border: solid 2px #c7874a;
+  border-radius: 10px;
+  padding: 15px;
+}
+.post-content .warning h3 {
+  margin: 0;
+  font-weight: bold;
+}
+.post-content .warning h3:before, .post-content .warning h3:after {
+  content: "⚠️";
+  text-shadow: 0 0 black;
+  margin: 0 6px;
+}
 /* Post navigation (prev/next) */
 .post-nav {
   display: flex;
